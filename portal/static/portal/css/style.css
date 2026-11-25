@@ -1,0 +1,103 @@
+/* ===== Campus Portal — style.css ===== */
+
+/* ---------- Reset & base ---------- */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #203040;
+  background: #f5f8fb;
+}
+
+/* ---------- Header ---------- */
+header {
+  background: #214d68;
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header img {
+  vertical-align: middle;
+  border-radius: 8px;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+nav a:focus-visible {
+  outline: 3px solid #ffdb70;
+  outline-offset: 2px;
+}
+
+/* ---------- Main content ---------- */
+main {
+  max-width: 900px;
+  margin: 32px auto;
+  padding: 16px 24px;
+}
+
+main h1 {
+  margin-bottom: 16px;
+  color: #1a3a52;
+}
+
+main p {
+  margin-bottom: 12px;
+}
+
+main ul {
+  margin: 12px 0 12px 24px;
+}
+
+main li {
+  margin-bottom: 6px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: #214d68;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  margin-top: 48px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  nav {
+    display: block;
+    margin: 12px 0 0;
+  }
+  nav a {
+    display: inline-block;
+    margin-bottom: 8px;
+  }
+  main {
+    padding: 12px 16px;
+  }
+}

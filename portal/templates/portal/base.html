@@ -1,0 +1,23 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Campus Portal{% endblock %}</title>
+  <link rel="stylesheet" href="{% static 'portal/css/style.css' %}">
+</head>
+<body>
+  <header>
+    <img src="{% static 'portal/images/logo.png' %}"
+         alt="Campus Portal logo" width="80" height="80">
+    {% include 'portal/partials/navbar.html' %}
+  </header>
+
+  <main id="main-content">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer><p>Campus Portal | Python Programming 2</p></footer>
+</body>
+</html>
